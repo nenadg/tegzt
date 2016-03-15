@@ -1,4 +1,6 @@
 /* default styling */
+html { background: white; }
+
 .red { background: red; border: 1px solid #fff; }
 .white { background: white; border: 1px solid #fff; }
 .bordered { border: 1px solid #dfdfdf; }
