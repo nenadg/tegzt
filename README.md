@@ -32,10 +32,10 @@ You can create your own mappings following these rules:
 
 There are four types of character sets loaded defaultly by `tegzt.js`:
 
-1. Lowercase characters, which you'll name - <somename>_lowercase.js
-2. Uppercase characters - <somename>_uppercase.js
-3. Numerics - <somename>_numbers.js
-4. Non-alpha-numerical - <somename>_nonalphanum.js
+1. Lowercase characters, which you'll name - [somename]_lowercase.js
+2. Uppercase characters - [somename]_uppercase.js
+3. Numerics - [somename]_numbers.js
+4. Non-alpha-numerical - [somename]_nonalphanum.js
 
 Once you've created these, save them to `matrices/` directory.
 
