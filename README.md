@@ -7,6 +7,8 @@ This is how `The quick brown fox` text looks like:
 
 ![alt text](http://statick.org/quickbrownfox_demo.png "Quick brown fox")
 
+Live preview here https://cdn.rawgit.com/nenadg/tegzt/master/index.html
+
 ## How does it work
 It looks for matching `n*n` array that represents one of alpha-numerical characters (+numbers, +some other),
 containing the character's style represented as 0's and 1's.
