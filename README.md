@@ -26,9 +26,10 @@ For example:
 (it's suposed to look to like `c` ...)
 
 ## Styling guide
-In directory `matrices/` you can find default font's mappings (although not complete, just lowercase by now).
+In directory `matrices/` you can find default font's matrices (although not complete, just lowercase by now).
 
-You can create your own mappings following these rules:
+### File naming conventions
+You can create your own matrices following these file naming rules:
 
 There are four types of character sets loaded defaultly by `tegzt.js`:
 
@@ -38,6 +39,11 @@ There are four types of character sets loaded defaultly by `tegzt.js`:
 4. Non-alpha-numerical - [somename]_nonalphanum.js
 
 Once you've created these, save them to `matrices/` directory.
+
+### Styling
+Your styles can be `n*n` matrices of arbitary size (dimension) in regard to your typographical complexities. I've used 6x6 for demonstrational simplicity, but apparently my fonts aren't peace of art, so that won't be enough. 
+
+It's kind of important that your matrices have the same size, otherwise rendering will collapse, overlap or otherwise suck. You can modify css to overcome such issues and have different size for each matrix.
 
 ## Loading your styles
     window.addEventListener('load', function(){
