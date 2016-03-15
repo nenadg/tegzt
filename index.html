@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Tegzt.js</title>
+
+        <link rel="stylesheet" type="text/css" href="default.css">
+        <script type="text/javascript" src="tegzt.js"></script>
+
+        <!-- test script -->
+        <script type="text/javascript">
+            window.addEventListener('load', function(){
+                tegzt.load('default', function(create){
+                    var tests = [
+                        'the quick brown fox jumps over the lazy dog',
+                        ' ',
+                        'pack my box with five dozen liquor jugs',
+                        ' ',
+                        'the five boxing wizards jump quickly',
+                        ' ',
+                        'how vexingly quick daft zebras jump',
+                        ' ',
+                        'Bright vixens jump; dozy fowl quack',
+                    ], i;
+
+                    for(i in tests){
+                        var border = i % 3;
+                        document.body.innerHTML += create(tests[i], border);
+                    }   
+
+                    //document.body.innerHTML = create('the quick brown fox jumps over the lazy dog', /* true to show box borders */ false);
+                    //document.body.innerHTML += create('pack my box with five dozen liquor jugs', /* true to show box borders */ true);
+                });
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
